@@ -1,9 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-let usuarios = [
-  { id: 1, nombre: "Gabriel", email: "gabriel@gmail.com" },
-];
+let usuarios = [{ id: 1, nombre: "Gabriel", email: "gabriel@gmail.com" }];
 
 router.get("/", (req, res) => {
   res.json(usuarios);
